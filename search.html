@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- other fonts and icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="search.css"/>
+</head>
+<body>
+    <!-- <script src="search.js"></script> -->
+    <section class="main">
+        <header>
+            <nav>
+               <div class="logo">Aashraya</div>
+               <div class="nav-items">
+               <a href="#">Home</a>
+               <a href="#">About us</a>
+               <a href="#">Register</a>
+               <a href="#"><i class="fa fa-search"></i></a>
+               </div>
+            </nav>
+        </header>    
+    </div>  
+    
+    <div class="wrapper">
+        <div id="search-container">
+            <input 
+            type="search" 
+            id="search-input" 
+            placeholder="Search here........."
+            />
+            <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick = "filter('all')" value="run search javascript">
+              All
+            </button>
+            <button class="button-value" onclick ="filter('Paying-Guest')" value="run search javascript" >
+              Paying-Guest
+            </button>
+            <button class="button-value" onclick ="filter('On-Rent')" value="run search javascript">
+              On-Rent
+            </button>
+            <button class="button-value" onclick = "filter('Dormitory')" value="run search javascript">
+              Dormitory
+            </button>
+            <button class="button-value" onclick ="filter('Buy')" value="run search javascript">
+              Buy
+            </button> 
+        </div> 
+        <!-- NOTE : Keep the names under filterproduct() same as under the button tag -->
+        <div id="products"></div>
+    </div>
+    
+    
+    
+    
+    <script type="text/javascript" src="search.js"></script>
+</body>
+</html>
